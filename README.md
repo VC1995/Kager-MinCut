@@ -7,25 +7,26 @@ Programming assignment 3
 
 code in Java 
  
+ 
   import java.util.*;
   import java.io.*;
   public class U {
-    ArrayList<Integer> vertices = new ArrayList<Integer>();
-    ArrayList<Integer> adjacent = new ArrayList<Integer>();
-    public void addVertex(int a) {
+   ArrayList<Integer> vertices = new ArrayList<Integer>();
+   ArrayList<Integer> adjacent = new ArrayList<Integer>();
+   public void addVertex(int a) {
         vertices.add(a);
     }
     
-    public void addAdjacent(int a ) {
+   public void addAdjacent(int a ) {
         adjacent.add(a) ;
     }
     
-    public String toString(){
+   public String toString(){
         String result="Vertices = "+vertices.toString()+"\n Adjacent vertices = "+adjacent.toString();
         return result;
     }
     
-    public void addU(U a){
+   public void addU(U a){
         vertices.addAll(a.getVertices());
         adjacent.addAll(a.getAdjacent());
         ArrayList<Integer> toBeRemoved=new ArrayList<Integer>();
@@ -44,7 +45,7 @@ code in Java
         
     }
     
-    public ArrayList<Integer> getAdjacent(){
+   public ArrayList<Integer> getAdjacent(){
         return adjacent;
     }
     
