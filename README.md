@@ -7,14 +7,11 @@ Programming assignment 3
 
 code in Java 
  
-   import java.util.*;
-  
-   import java.io.*; 
-   
-   public class U {
+  import java.util.*;
+  import java.io.*;
+  public class U {
     ArrayList<Integer> vertices = new ArrayList<Integer>();
     ArrayList<Integer> adjacent = new ArrayList<Integer>();
-    
     public void addVertex(int a) {
         vertices.add(a);
     }
@@ -61,13 +58,12 @@ code in Java
 }
     
 
-public class MinCut
-{   ArrayList<U> V=new ArrayList<U>();
-    
+  public class MinCut
+  {   ArrayList<U> V=new ArrayList<U>();
     public static void main(String[] Args){
         MinCut problem1 = new MinCut();
         problem1.go();
-}
+  }
 
 public void go() {
     loadVertices();
