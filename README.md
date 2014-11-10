@@ -10,8 +10,9 @@ code in Java
 
 
 ```
-import java.util.*;
+  import java.util.*;
   import java.io.*;
+// DATA STRUCTURE 
   public class U {
    ArrayList<Integer> vertices = new ArrayList<Integer>();
    ArrayList<Integer> adjacent = new ArrayList<Integer>();
@@ -60,7 +61,7 @@ import java.util.*;
     }
 }
     
-
+// THE CLASS CONTAINING MAIN 
   public class MinCut
   {   ArrayList<U> V=new ArrayList<U>();
     public static void main(String[] Args){
@@ -68,7 +69,7 @@ import java.util.*;
         problem1.go();
   }
 
-public void go() {
+   public void go() {
     loadVertices();
     int min=10000;    
     for(int i=0;i>-1;i++) {
@@ -94,16 +95,16 @@ public void go() {
             
         }
         System.out.println(i);
-        //System.out.println( V.get(0) + " and size = "+V.get(0).getAdjacent().size() + "\n " + V.get(1) + " and size = "+V.get(1).getAdjacent().size());
+        //System.out.println( V.get(0) + " and size = "+V.get(0).getAdjacent().size() + "\n " + V.get(1) + " and size =     "+V.get(1).getAdjacent().size());
         min = Math.min( min , V.get(0).getAdjacent().size() );
         
     }
     
     System.out.println("Min. = " +min);
 
-}
+   }
 
-public void loadVertices() {
+   public void loadVertices() {
     try {
         FileReader fileReader=new FileReader(new File("MinCut.txt"));
         BufferedReader reader= new BufferedReader(fileReader);
@@ -123,7 +124,7 @@ public void loadVertices() {
     }
     catch(IOException e) {}
     
-}
+   }
 
-}
+ }
 ```
